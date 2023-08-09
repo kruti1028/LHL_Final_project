@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility Prediction</title>
+</head>
+<body>
+    <h1>Loan Eligibility Prediction</h1>
+    <form method="POST" action="/predict">
+        Gender:
+        <select name="Gender">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br>
+        
+        Married:
+        <select name="Married">
+            <option value="1">Married</option>
+            <option value="0">Not Married</option>
+        </select><br>
+        
+        Dependents:
+        <select name="Dependents">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br>
+        
+        Education:
+        <select name="Education">
+            <option value="0">Uneducated</option>
+            <option value="1">Educated</option>
+        </select><br>
+        
+        Self Employed:
+        <select name="Self_Employed">
+            <option value="0">Self Employed</option>
+            <option value="1">Employed</option>
+        </select><br>
+        
+        Applicant Income: <input type="number" name="ApplicantIncome"><br>
+        Coapplicant Income: <input type="number" name="CoapplicantIncome"><br>
+        Loan Amount: <input type="number" name="LoanAmount"><br>
+        Loan Amount Term: <input type="number" name="Loan_Amount_Term"><br>
+        Credit History: <input type="number" name="Credit_History"><br>
+        
+        Property Area:
+        <select name="Property_Area">
+            <option value="0">Urban</option>
+            <option value="1">Semiurban</option>
+            <option value="2">Rural</option>
+        </select><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+    <h2>{{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
