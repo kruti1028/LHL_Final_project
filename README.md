@@ -33,3 +33,13 @@ Loan_Amount_Term | Term of loan in months
 Credit_History | credit history meets guidelines
 Property_Area | Urban/ Semi Urban/ Rural
 Loan_Status | Loan approved (Y/N)
+
+As mentioned above this is a Binary Classification problem in which we need to predict our Target label which is “Loan Status”.
+
+Loan status can have two values: Yes or No.
+
+Yes: if the loan is approved
+No: if the loan is not approved
+So using the training dataset we will train our model and try to predict our target column which is “Loan Status” on the test dataset.
+
+
