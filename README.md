@@ -13,5 +13,23 @@ gradient boosting to predict loan data.
 ### Introduction
 This is a loan prediction project. Using a set of variables, I will predict which of the bank's customers are more likely to have their loan application approved. This is a classification problem in Machine Learning, and banks can use these models to assess their customers for loan qualification and fitness.
 
-### process of the project
-<img width="829" alt="image" src="https://github.com/kruti1028/LHL_Final_project/assets/126723087/5781b245-b9b7-4834-9b3a-ce41e6747e63">
+### Process of the project
+<img width="829" alt="i![CRISP-DM](https://github.com/kruti1028/LHL_Final_project/assets/126723087/097c2358-dc0f-4a1c-acc8-db9b1cd535ab)
+
+### Data Description
+The dataset contains a set of 613 records under 13 attributes:
+Variable | Description
+----------|--------------
+Loan_ID | Unique Loan ID
+Gender | Male/ Female
+Married | Applicant married (Y/N)
+Dependents | Number of dependents
+Education | Applicant Education (Graduate/ Under Graduate)
+Self_Employed | Self employed (Y/N)
+ApplicantIncome | Applicant income
+CoapplicantIncome | Coapplicant income
+LoanAmount | Loan amount in thousands
+Loan_Amount_Term | Term of loan in months
+Credit_History | credit history meets guidelines
+Property_Area | Urban/ Semi Urban/ Rural
+Loan_Status | Loan approved (Y/N)
