@@ -30,7 +30,7 @@ ApplicantIncome | Applicant income
 CoapplicantIncome | Coapplicant income
 LoanAmount | Loan amount in thousands
 Loan_Amount_Term | Term of loan in months
-Credit_History | credit history meets guidelines
+Credit_History | Credit history meets guidelines
 Property_Area | Urban/ Semi Urban/ Rural
 Loan_Status | Loan approved (Y/N)
 
@@ -38,8 +38,37 @@ As mentioned above this is a Binary Classification problem in which we need to p
 
 Loan status can have two values: Yes or No.
 
-Yes: if the loan is approved
-No: if the loan is not approved
+1. Yes: if the loan is approved
+2. No: if the loan is not approved
 So using the training dataset we will train our model and try to predict our target column which is “Loan Status” on the test dataset.
 
+### Loan Prediction
 
+Understanding data before making an algorithm to learn it is the correct way to approach it. It makes the ML problem-solving process much smoother and clearer for both us and the machine. In this notebook, we've formed a certain level of understanding and insights on the data as follows:
+
+1. The Data is Biased
+2. Credit History Column has the highest significance with the target variable(Loan Status).
+3. There are some Typos in the dataset that leads to bad training, especially in the Loan Amount Term column.
+4. Larger population appearing for loans are Males, Graduates, Not Self-employed, Married and with 0 dependents.
+5. People who are Graduated and Not self-employed have better chances of getting a loan.
+6. People with Property area in Semi-urban places has greater chances of loan approval.
+7. People with > 0 Dependents are mostly Married
+8. There's a slight linear relationship between Loan Amount and the Applicant's Income, which might be because greater rank business people need higher loans for higher trades.
+9. It is also fascinating that some of those people also get lucky with loans.
+10. There is no such thing as a Higher Applicant Income getting higher chances of receiving loans, however, people with low Total Income(Applicant Income + Co-applicant Income) have lesser chances compared to higher people with higher Total Income.
+11. For the final prediction I haven't used the total income column because as per the data, I feel I will get a more accurate answer with separate applicant income and co-applicant income.
+12. here are my best models and I chose RndomForestClassifier based on the best score
+    
+    ##### LogisticRegression
+1. LogisticRegression score Before Hyperparameter Tuning: 80.47
+2. LogisticRegression score after Hyperparameter Tuning: 80.48 
+    
+------------------------------------------------------
+##### SVC
+1. SVC score Before Hyperparameter Tuning: 79.39
+2. SVC score after Hyperparameter Tuning: 80.66
+    
+--------------------------------------------------------
+##### RandomForestClassifier
+1. RandomForestClassifier score Before Hyperparameter Tuning: 77.76
+2. RandomForestClassifier score after Hyperparameter Tuning: 80.66 
