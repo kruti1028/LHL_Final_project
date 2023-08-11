@@ -42,6 +42,17 @@ Loan status can have two values: Yes or No.
 2. No: if the loan is not approved
 So using the training dataset we will train our model and try to predict our target column which is “Loan Status” on the test dataset.
 
+Our data Distribution bias:
+
+1. Gender: Most people are Male
+2. Married: Most people are Married
+3. Dependents: Most people have 0 dependents
+4. Graduate: Most people are Graduated
+5. Self-Employed: Most people are not self-employed i.e., they have jobs
+6. Credit History: Most people have a credit history of 1
+7. Loan Status: Most people get loans. Our problem is biased
+
+
 ### Loan Prediction
 
 Understanding data before making an algorithm to learn it is the correct way to approach it. It makes the ML problem-solving process much smoother and clearer for both us and the machine. In this notebook, we've formed a certain level of understanding and insights on the data as follows:
