@@ -58,6 +58,7 @@ Understanding data before making an algorithm to learn it is the correct way to 
 10. There is no such thing as a Higher Applicant Income getting higher chances of receiving loans, however, people with low Total Income(Applicant Income + Co-applicant Income) have lesser chances compared to higher people with higher Total Income.
 11. For the final prediction I haven't used the total income column because as per the data, I feel I will get a more accurate answer with separate applicant income and co-applicant income.
 12. here are my best models and I chose RndomForestClassifier based on the best score
+
     
     ##### LogisticRegression
 1. LogisticRegression score Before Hyperparameter Tuning: 80.47
