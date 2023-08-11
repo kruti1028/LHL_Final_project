@@ -57,10 +57,8 @@ Understanding data before making an algorithm to learn it is the correct way to 
 9. It is also fascinating that some of those people also get lucky with loans.
 10. There is no such thing as a Higher Applicant Income getting higher chances of receiving loans, however, people with low Total Income(Applicant Income + Co-applicant Income) have lesser chances compared to higher people with higher Total Income.
 11. For the final prediction I haven't used the total income column because as per the data, I feel I will get a more accurate answer with separate applicant income and co-applicant income.
-12. here are my best models and I chose RndomForestClassifier based on the best score
-
-    
-    ##### LogisticRegression
+12. Here are my best models and I chose RndomForestClassifier based on the best score   
+##### LogisticRegression
 1. LogisticRegression score Before Hyperparameter Tuning: 80.47
 2. LogisticRegression score after Hyperparameter Tuning: 80.48 
     
@@ -72,4 +70,8 @@ Understanding data before making an algorithm to learn it is the correct way to 
 --------------------------------------------------------
 ##### RandomForestClassifier
 1. RandomForestClassifier score Before Hyperparameter Tuning: 77.76
-2. RandomForestClassifier score after Hyperparameter Tuning: 80.66 
+2. RandomForestClassifier score after Hyperparameter Tuning: 80.66
+
+13. Here is the final prediction demo app
+    <img width="506" alt="Screenshot 2023-08-11 at 11 03 03 AM" src="https://github.com/kruti1028/LHL_Final_project/assets/126723087/ecf03284-d086-4df9-8bde-73155ea01eca">
+
