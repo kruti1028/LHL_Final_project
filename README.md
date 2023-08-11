@@ -71,7 +71,9 @@ Understanding data before making an algorithm to learn it is the correct way to 
 ##### RandomForestClassifier
 1. RandomForestClassifier score Before Hyperparameter Tuning: 77.76
 2. RandomForestClassifier score after Hyperparameter Tuning: 80.66
+   
 
 13. Here is the final prediction demo app
+    
     <img width="506" alt="Screenshot 2023-08-11 at 11 03 03 AM" src="https://github.com/kruti1028/LHL_Final_project/assets/126723087/ecf03284-d086-4df9-8bde-73155ea01eca">
 
